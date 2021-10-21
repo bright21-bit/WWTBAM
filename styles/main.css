@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #093a87;
+}
+
+
+.socials {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icon {
+    background-color: #3a80f0;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    transition: .2s all;
+}
+
+.social-icon:hover {
+    background-color: yellow;
+    color: #3a80f0;
+}
+
+.social-icon:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+
+
+.game-area {
+    width: 80%;
+    border: 2px solid #3a80f0;
+    border-radius: 8px;
+    height: 80vh;
+    margin: 10vh auto;
+    display: flex;
+}
+
+.game-area__main {
+    flex: 1;
+    padding: 24px;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+
+.logo {
+    width: 150px;
+    /* height: 150px; */
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+.lifeline {
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 1000px;
+    background-color: #3a80f0;
+    color: yellow;
+}
+
+.question-area {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.question, .option {
+    border-radius: 1000px;
+    padding: 24px;
+    color: yellow;
+    border: 1px solid #3a80f0;
+}
+
+.question {
+    text-align: center;
+}
+
+.options-section {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.option {
+    flex: 1;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.option:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.game-area__levels {
+    border-left: 2px solid #3a80f0;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.level {
+    width: 120px;
+    padding: 8px;
+    color: yellow;
+    padding: 4px 0;
+    transition: .2s all;
+}
+
+.level.active {
+    background-color: yellow;
+    color: black;
+}
+
+.level:not(:last-of-type) {
+    margin-bottom: 24px;
+}
