@@ -86,6 +86,7 @@ function checkAnswer(e) {
     // else if this option is wrong
         // make option red
         // end game
+        // comment
 }
 
 
